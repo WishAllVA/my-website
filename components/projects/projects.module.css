@@ -1,37 +1,42 @@
+.projects {
+  border: 15px solid red;
+}
+
 .projects h2 {
-    font-weight: 300;
-    text-decoration: underline;
-    position: absolute;
-    top: 130%;
-    left: 10%;
-  }
+  font-weight: 300;
+  text-decoration: underline;
+  position: absolute;
+  top: 130%;
+  left: 10%;
+}
   
-  .project {
-    font-weight: 200;
-    position: absolute;
-    top: 140%;
-    left: 10%;
-    word-spacing: 8px;
-    line-height: 30px;
-  }
+.project {
+  font-weight: 200;
+  position: absolute;
+  top: 140%;
+  left: 10%;
+  word-spacing: 8px;
+  line-height: 30px;
+}
   
-  .projectList {
-    list-style-type: none;
-    margin: 20px 20px;
-    padding: 0;
-    overflow: hidden;
-    /* background-color: #333; */
-  }
-  
-  .projectList li {
-    /* float: left; */
-  }
-  
-  /* And so on... */
-  .projectList li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.projectList {
+  list-style-type: none;
+  margin: 20px 20px;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+.projectList li {
+  font-size: large;
+  font-weight: 300;
+}
+
+/* And so on... */
+.projectList li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}

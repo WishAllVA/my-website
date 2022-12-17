@@ -24,7 +24,8 @@
   }
   
   .skillList li {
-    /* float: left; */
+    font-size: large;
+    font-weight: 300;
   }
   
   /* And so on... */
