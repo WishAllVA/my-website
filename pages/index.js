@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import classes from '../styles/Home.module.css'
 import { useParallax } from "react-scroll-parallax"
+import Career from '../components/career/career'
+import Projects from '../components/projects/projects'
+import Skills from '../components/Skills/skills'
 
 export default function Home() {
   const skyParallax = useParallax({
@@ -35,10 +38,10 @@ export default function Home() {
         <div ref={profilePicParallax.ref} className={classes.profilePic}>
           <Image src="/profilePic.png" alt="Profile Pic" width={222} height={216} />
         </div>
-        <div className={classes.career}>
-          <h2>Career and Goals:</h2>
-          <h3>Started off in Jan 2019 with Bosch as a Software Developer, its been 4 years in this exceptional professional journey</h3>
-        </div>
+        <Career />
+        <Projects />
+        <Skills />
+        
       </div>
     </div>
   )

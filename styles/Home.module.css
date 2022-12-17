@@ -79,27 +79,6 @@
   animation-delay: 4.8s;
 }
 
-.career {
-
-}
-
-.career h2 {
-  font-weight: 300;
-  text-decoration: underline;
-  position: absolute;
-  top: 100%;
-  left: 10%;
-}
-
-.career h3 {
-  font-weight: 200;
-  position: absolute;
-  top: 110%;
-  left: 10%;
-  word-spacing: 8px;
-}
-
-
 @keyframes bannerTextAnimation1{ 
   from { width: 0}
   to {
