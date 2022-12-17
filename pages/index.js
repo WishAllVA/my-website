@@ -4,7 +4,7 @@ import classes from '../styles/Home.module.css'
 import { useParallax } from "react-scroll-parallax"
 import Career from '../components/career/career'
 import Projects from '../components/projects/projects'
-import Skills from '../components/Skills/skills'
+import Skills from '../components/skills/skills'
 
 export default function Home() {
   const skyParallax = useParallax({
