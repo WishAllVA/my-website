@@ -15,7 +15,7 @@
 
 .profilePic {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 80%;
 }
 
@@ -31,15 +31,15 @@
 
 .intro {
   position: absolute;
-  top: 10%;
-  left: 20%;
-  color: black;
+  top: 50%;
+  left: 10%;
+  color: rgb(69, 87, 86);
   line-height: 50px;
   word-spacing: 20px;
   white-space: nowrap;
   overflow: hidden;
   font-size: large;
-  animation: introAnimation 3.0s steps(60, end);
+  animation: introAnimation 4.0s steps(60, end);
 }
 
 @keyframes introAnimation{ 
@@ -77,6 +77,26 @@
   font-size: large;
   animation: bannerTextAnimation2 1.8s steps(60, end) forwards;
   animation-delay: 4.8s;
+}
+
+.career {
+
+}
+
+.career h2 {
+  font-weight: 300;
+  text-decoration: underline;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+}
+
+.career h3 {
+  font-weight: 200;
+  position: absolute;
+  top: 110%;
+  left: 10%;
+  word-spacing: 8px;
 }
 
 
