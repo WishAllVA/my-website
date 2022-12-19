@@ -7,6 +7,7 @@ import Projects from '../components/projects/projects'
 import Skills from '../components/skills/skills'
 import { Fragment, useEffect } from 'react'
 import Education from '../components/education/education'
+import Navbar from '../components/navbar/navbar'
 
 export default function Home() {
   // const skyParallax = useParallax({
@@ -31,7 +32,10 @@ export default function Home() {
   }, [])
   return (
     <div className={classes.container}>
-      <div className={classes.bannerHolder}>
+      <div>
+        <Navbar />
+      </div>
+      <div className={classes.bannerHolder} id="home">
         {/* <Image src="/main-bg.svg" alt="Sky" width={1600} height={1000} /> */}
       </div>
       <div className={classes.main}>
@@ -57,7 +61,7 @@ export default function Home() {
             <h2>and undervaluing what you do</h2>
           </div> */}
 
-          <div className={classes.sections}>
+          <div className={classes.sections} id="about">
             <Career />
             <Projects />
             <Skills />
