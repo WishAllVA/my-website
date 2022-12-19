@@ -1,20 +1,15 @@
 .projects {
-  border: 15px solid red;
+  margin: 20px 0;
 }
 
 .projects h2 {
   font-weight: 300;
   text-decoration: underline;
-  position: absolute;
-  top: 130%;
-  left: 10%;
 }
   
 .project {
+  margin: 40px 0;
   font-weight: 200;
-  position: absolute;
-  top: 140%;
-  left: 10%;
   word-spacing: 8px;
-  line-height: 30px;
+  line-height: 50px;
 }

@@ -1,28 +1,40 @@
+.container {
+  position: relative;
+}
+
+.main {
+  /* border: 10px solid yellow; */
+  /* overflow: scroll; */
+}
+
 .profilePic {
-  position: absolute;
+  position: relative;
   top: 10%;
   left: 80%;
+  width: 16%;
+  padding-top: 10%;
 }
 
 .bannerHolder {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  position: relative;
-  top: 0%;
-  right: 18%;
+  background-image: url('../public/main-bg.svg');
   font-weight: 200;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .intro {
-  position: absolute;
-  top: 50%;
-  left: 10%;
   color: rgb(69, 87, 86);
+  padding: 160px 100px;
   line-height: 50px;
   word-spacing: 20px;
   white-space: nowrap;
-  overflow: hidden;
   font-size: large;
   animation: introAnimation 4.0s steps(60, end);
 }
@@ -35,9 +47,6 @@
 }
 
 .bannerText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 0;
   color: rgb(36, 122, 220);
   line-height: 50px;
@@ -50,9 +59,6 @@
 }
 
 .bannerText2 {
-  position: absolute;
-  top: 55%;
-  left: 50%;
   width: 0;
   color: rgb(36, 122, 220);
   line-height: 30px;
@@ -62,6 +68,14 @@
   font-size: large;
   animation: bannerTextAnimation2 1.8s steps(60, end) forwards;
   animation-delay: 4.8s;
+}
+
+.sections {
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 @keyframes bannerTextAnimation1{ 
