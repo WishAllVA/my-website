@@ -8,25 +8,29 @@ export default function Projects() {
       id: 1,
       name: 'Connected Elevators',
       description: '',
-      open: false
+      open: false,
+      imageSrc: '/connected-elevators.png'
     },
     {
       id: 2,
       name: 'Shipment Tracking',
       description: '',
-      open: false
+      open: false,
+      imageSrc: '/travis.png'
     },
     {
       id: 3,
       name: 'Bridgeport (Fintech)',
       description: '',
-      open: false
+      open: false,
+      imageSrc: '/bridgeport.png'
     },
     {
       id: 4,
       name: 'Sales Dashboards',
       description: '',
-      open: false
+      open: false,
+      imageSrc: '/power_bi.png'
     }
   ]
   const [projectList, setProjectList] = useState(() => ProjectList)

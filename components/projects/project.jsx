@@ -1,22 +1,32 @@
 import classes from './project.module.css'
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.css"
+import Image from 'next/image'
 
 export default function Project(props) {
   const { onOpenProjectHandler, projectList } = props
   return (
-    <ul className={classes.projectList}>
+    <Carousel
+      className={classes.container}
+      autoPlay
+      // centerMode
+      infiniteLoop
+      showArrows={true}
+      onChange={() => {}}
+      onClickItem={() => {}}
+      onClickThumb={onOpenProjectHandler}
+      // axis="horizontal"
+    >
       {
         projectList.map(project => {
           return (
-            <li key={project.id.toString()} className={classes.project}>
-              <div>
-                {project.name} <span id={project.id} onClick={onOpenProjectHandler}>{ project.open ? <BsChevronUp /> : <BsChevronDown /> }</span>
-                <div style={{ display: project.open ? 'inherit' : 'none' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, expedita! Porro suscipit, fuga consequatur ratione obcaecati libero, architecto, tenetur ipsam excepturi nobis quas ipsa consectetur omnis numquam doloremque! Ratione, saepe.</div>
-              </div>
-            </li>
+            <div className={classes.slide} key={project.id.toString()}>
+              <Image src={project.imageSrc} id={project.id.toString()} width={300} height={500} />
+              <p className="legend">{project.name}</p>
+            </div>
           )
         })
       }
-    </ul>
+    </Carousel>
   )
 }

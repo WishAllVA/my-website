@@ -1,21 +1,11 @@
-.projectList {
-    list-style-type: none;
-    margin: 20px 20px;
-    padding: 0;
-    overflow: hidden;
-    /* background-color: #333; */
+.container {
+    /* display: flex; */
+    width: 80vw;
+    padding-left: 120px;
 }
 
-.projectList li {
-    font-size: large;
-    font-weight: 300;
-}
-
-/* And so on... */
-.projectList li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.slide {
+    position: relative;
+    padding: 30px 30px;
+    background-color: rgb(58, 156, 213);
 }
