@@ -32,7 +32,6 @@ export default function Projects() {
   const [projectList, setProjectList] = useState(() => ProjectList)
   const onOpenProjectHandler = (event) => {
       const openProjectId = event.currentTarget.id
-      console.log(openProjectId)
       const currentProjectList = projectList
       setProjectList(currentProjectList.map(project => {
         return {
